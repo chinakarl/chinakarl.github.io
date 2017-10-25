@@ -1,25 +1,37 @@
-# Site settings
-title: Clean Blog
-header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-copyright_name: Your/Project/Corporate Name
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/chinakarl.github.io"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  StartBootstrap
-email_username:  your-email@yourdomain.com
-
-# Google Analytics
-# To enable google analytics, uncomment below line with a valid Google Tracking ID
-# google_tracking_id:
-
-# Build settings
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+highlights: pygments
+url: 
+cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+lsi: false
+safe: true
+timezone: Asia/Shanghai
+auto: false 
 
-gems: [jekyll-paginate, jekyll-feed]
+paginate: 8
+paginate_path: "page:num"
+
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+JB :
+  IMAGE_PATH : http://coolshell.info/images
+
+# presonal config
+domain: http://coolshell.info
+title: 小石头
+description: 小石头
+author: Lippi.OuYang
+email: zhaihaixiang@sina.com
+github: chinakarl
+
+config:
+  js_dir:
+  img_dir:
+  css_dir:
