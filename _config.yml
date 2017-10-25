@@ -1,7 +1,7 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:"/startbootstrap-clean-blog-jekyll"
+baseurl:"/chinakarl.github.io"
 url: 
 date_format: "ordinal"
 title: 小石头
