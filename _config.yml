@@ -1,8 +1,8 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:
-url: http://mazhuang.org
+baseurl:"/startbootstrap-clean-blog-jekyll"
+url: 
 date_format: "ordinal"
 title: 小石头
 subtitle: "coding人生"
