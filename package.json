@@ -12,8 +12,8 @@
         "grunt-banner": "~0.2.3",
         "grunt-contrib-uglify": "~0.5.1"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/IronSummitMedia/startbootstrap-clean-blog-jekyll.git"
-    }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chinakarl/chinakarl.github.io.git"
+  }
 }
