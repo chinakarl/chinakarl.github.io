@@ -2,7 +2,8 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url:http://mazhuang.org
+url: http://mazhuang.org
+date_format: "ordinal"
 title: karl
 subtitle: "coding人生"
 description: "小石头的个人博客"
