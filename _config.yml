@@ -1,8 +1,8 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-url:"https://chinakarl.github.io/"
-baseurl:""
+baseurl:
+url:https://chinakarl.github.io
 title: karl
 subtitle: "coding人生"
 description: "小石头的个人博客"
@@ -11,6 +11,7 @@ favicon: /favicon.ico
 timezone: China/JiangSu
 encoding: "utf-8"
 side_bar_repo_limit: 5
+
 
 # ---------------- #
 #      Author      #
