@@ -1,9 +1,9 @@
 - name: Software Engineer Keywords
   keywords:
       - Java
-      - C
+      - C#
       - Python
-	  - PHP
+      - PHP
       - Design Patterns
 - name: Mobile Developer Keywords
   keywords:
