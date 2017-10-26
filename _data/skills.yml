@@ -1,9 +1,10 @@
 - name: Software Engineer Keywords
   keywords:
       - Java
-      - C++
+      - .Net
       - Python
-      - Design Patterns
+      - Js,Jquery
+	  - PHP
 
 - name: Mobile Developer Keywords
   keywords:
