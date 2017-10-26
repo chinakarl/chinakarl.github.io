@@ -1,10 +1,10 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:"/chinakarl.github.io"
-url:https://chinakarl.github.io/
+baseurl:""
+url:"https://chinakarl.github.io/"
 date_format: "ordinal"
-title: 小石头
+title: karl
 subtitle: "coding人生"
 description: "小石头的个人博客"
 keywords: 小石头, stone
