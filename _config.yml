@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: http://mazhuang.org
+url: https://chinakarl.github.io/
 date_format: "ordinal"
 title: karl
 subtitle: "coding人生"
