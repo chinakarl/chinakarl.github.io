@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:"/chinakarl.github.io"
-url: /chinakarl.github.io
+url:
 date_format: "ordinal"
 title: 小石头
 subtitle: "coding人生"
