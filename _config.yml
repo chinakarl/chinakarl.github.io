@@ -1,8 +1,8 @@
 # ---------------- #
 #   Main Configs   #
 # ---------------- #
-baseurl:""
 url:"https://chinakarl.github.io/"
+baseurl:""
 title: karl
 subtitle: "coding人生"
 description: "小石头的个人博客"
