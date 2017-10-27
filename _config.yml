@@ -94,14 +94,14 @@ disqus:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: chinakarl
-    repo: karl
+    repo: chinakarl.github.io
     oauth:
         client_id: daa4407e403e07722879
         client_secret: 737938ef2dfe9d5ab793f5ee9ad802c87238b4ca
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: chinakarl
-    repo: karl
+    repo: chinakarl.github.io
     clientID: daa4407e403e07722879
     clientSecret: 737938ef2dfe9d5ab793f5ee9ad802c87238b4ca
 # 在使用其它评论组件时可点击显示 Disqus
