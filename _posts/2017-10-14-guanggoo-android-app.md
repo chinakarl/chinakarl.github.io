@@ -5,17 +5,30 @@ categories: html
 description: html5
 keywords: html5, canvas
 ---
+这是在学校时候没事看的以前放在csdn上现在搬过来了，有点low见谅
+
+
+## 画线
 
 var canvas = document.getElementById("canvas");
+
 var cxt = canvas.getContext("2d");
+
 //画线(用线画三角型)
 cxt.strokeStyle = "red";//线作色
+
 cxt.lineTo(59, 59);//线的起点
+
 cxt.lineTo(20, 20);
+
 cxt.lineTo(59, 20);
+
 cxt.closePath();//可以用closePath()将你画的图形封闭起来
+
 cxt.stroke();
     
+## 画圆
+
 //画圆
 //如果是rgba(1,2,3,4)第四个参数是不透明度
 //绘制实心圆
