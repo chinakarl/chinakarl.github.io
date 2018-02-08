@@ -3,7 +3,7 @@ layout: post
 title: 2017年总结
 categories: 
 description: 总结2017年中自己的所见、所闻、所想、所学
-keywords:2017，总结
+keywords: 2017，总结
 ---
 
 刚毕业的时候就开始思索写总结，可是迟迟没有下笔，今年有点时间就顺手写下了这篇一年的回忆。
