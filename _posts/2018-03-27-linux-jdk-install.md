@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Linux中安装JDK
-categories: Java,Linux
+categories: Java
 description: 在linux系统中安装部署JDk
 keywords: linux,JDK
 ---
