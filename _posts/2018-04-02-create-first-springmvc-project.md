@@ -71,11 +71,9 @@ maven新建第一个springmvc项目
    
    编写简单代码，代码如下
      
-   import org.springframework.stereotype.Controller;
-
-   @Controller
+    import org.springframework.stereotype.Controller;
+    @Controller
 	public class springcontroller {
-
 		@RequestMapping("/login")
 		public String Login()
 		{
@@ -85,7 +83,6 @@ maven新建第一个springmvc项目
 	}
 
 	至此就新建完成了,效果如下
-
 	![INNER JOIN](https://chinakarl.github.io/images/posts/java/first-springmvc-web.png)
 
 

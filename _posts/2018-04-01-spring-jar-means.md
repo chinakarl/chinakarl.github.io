@@ -11,11 +11,9 @@ spring的所有jar包的用途
 1.spring.jar
 
 　　是包含有完整发布模块的单个jar 包。
-
 2. org.springframework.aop
 
 　　包含在应用中使用Spring的AOP特性时所需的类。
-
 3. org.springframework.asm
 
 　　Spring独立的asm程序, Spring2.5.6的时候需要asmJar 包, 3.0开始提供他自己独立的asmJar。
