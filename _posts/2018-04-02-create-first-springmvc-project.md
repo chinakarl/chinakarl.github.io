@@ -8,13 +8,13 @@ keywords: spring,springmvc,新建项目
 
 maven新建第一个springmvc项目
 
-##  下载spring tool suite(sts)
+## 下载spring tool suite(sts)
  
  下载地址是 http://download.springsource.com/release/TOOLS/update/3.9.3.RELEASE/e4.7/springsource-tool-suite-3.9.3.RELEASE-e4.7.3-updatesite.zip
  
  下载后解压，然后打开eclipse -> help -> install new software -> add
   
-  操作如下
+ 操作如下
 
  ![INNER JOIN](https://chinakarl.github.io/images/posts/java/install-sts.png)
 
@@ -83,6 +83,7 @@ maven新建第一个springmvc项目
 	}
 
 	至此就新建完成了,效果如下
+
 	![INNER JOIN](https://chinakarl.github.io/images/posts/java/first-springmvc-web.png)
 
 
