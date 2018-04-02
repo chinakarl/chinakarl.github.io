@@ -61,6 +61,7 @@ maven项目在eclipse中运行
 
    在新建的web项目的pom.xml文件的build节点中添加
 
+   1.重新部署
        <plugins>  
         <plugin>  
             <groupId>org.codehaus.mojo</groupId>  
@@ -74,9 +75,11 @@ maven项目在eclipse中运行
         </plugin>  
     </plugins>  
 
+	在global中填入 package tomcat:redeploy (这是将war包重新部署到tomcat的webapps下)
 
-	在global中填入 package tomcat:redeploy
+  2.直接maven部署
 
-
+    在global中填入 clean install
+    
 
   
