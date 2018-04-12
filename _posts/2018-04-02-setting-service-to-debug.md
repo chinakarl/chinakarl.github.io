@@ -19,7 +19,7 @@ keywords: tomcat,调试,debug
 
  1. 如果安装成功了，并且启动debug了，浏览localhost:8080时候一直是404，
 
- 双击server(之前要将server clean下，不然不好更改，选择框是灰色的)，然后将deploy path 更改为webapp(默认是wtpwebapp)
+ 双击server(之前要将server下的web删除，再将server clean下，不然不好更改，选择框是灰色的)，然后将deploy path 更改为webapp(默认是wtpwebapp)
 
 
  ![INNER JOIN](https://chinakarl.github.io/images/posts/java/edit-server-deploy-path.png)
