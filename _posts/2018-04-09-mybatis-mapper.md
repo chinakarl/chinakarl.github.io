@@ -8,7 +8,7 @@ keywords: mybatis,mapper
 
 对mybatis中mapper的配置学习
 
-## 什么事mybatis
+## 什么是mybatis
 
  MyBatis 是一款优秀的持久层框架，它支持定制化 SQL、存储过程以及高级映射。
  
