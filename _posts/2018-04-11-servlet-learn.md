@@ -8,7 +8,7 @@ keywords: servlet
 
 对servlet的基本的学习
 
-## 什么事servlet
+## 什么是servlet
 
  Servlet 为创建基于 web 的应用程序提供了基于组件、独立于平台的方法，可以不受 CGI 程序的性能限制。
  
