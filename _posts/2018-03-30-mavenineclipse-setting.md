@@ -18,7 +18,7 @@ maven在eclipse中设置和使用
 
  下载的图中的两个(Binary是用的工具，而Source是maven的源码)
 
- 
+ 配置MAVEN_HOME的环境变量(和正常的配置一样)
 
 ## eclipse中配置maven
    
