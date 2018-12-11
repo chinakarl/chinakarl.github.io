@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  rabbitmq搭建
-categories: mq，Linux
+categories: mq,Linux
 description: linux下rabbitmq的搭建
 keywords: linux,rabbitmq
 ---

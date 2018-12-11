@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  dubbo搭建
-categories: Java，Linux
+categories: Java,Linux
 description: linux下dubbo的搭建
 keywords: linux,dubbo
 ---
