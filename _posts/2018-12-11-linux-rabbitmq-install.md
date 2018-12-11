@@ -23,9 +23,9 @@ keywords: linux,rabbitmq
 
    2. 安装Erlang 官网 http://www.erlang.org/downloads
 
-   用wget下载 wget -c http://erlang.org/download/otp_src_20.2.tar.gz
+      用wget下载 wget -c http://erlang.org/download/otp_src_20.2.tar.gz
 
-   下载后解压
+      下载后解压
 
    3. 编译安装( 我这里指定编译安装后放在/usr/local/erlang目录里面，这个你们可以改成其他的 )：
 
@@ -39,9 +39,9 @@ keywords: linux,rabbitmq
 
 　　　　[root@localhost bin]# ./erl
 
-     ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/erlang-success.png)
+       ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/erlang-success.png)
      
-     出现以上就表示安装成功
+       出现以上就表示安装成功
 
    5. 配置环境变量
 
@@ -57,9 +57,9 @@ keywords: linux,rabbitmq
   
    1. 下载rabbitmq 官网(地址：http://www.rabbitmq.com/releases/rabbitmq-server/)
 
-   用wget下载 wget -c http://www.rabbitmq.com/releases/rabbitmq-server/v3.6.15/rabbitmq-server-generic-unix-3.6.15.tar.xz
+      用wget下载 wget -c http://www.rabbitmq.com/releases/rabbitmq-server/v3.6.15/rabbitmq-server-generic-unix-3.6.15.tar.xz
    
-   解压：
+      解压：
 
 　　　　　　[root@localhost local]# xz -d rabbitmq-server-generic-unix-3.6.15.tar.xz 
 
@@ -84,12 +84,12 @@ keywords: linux,rabbitmq
 　　　　然后就可以远程访问了，然后可直接配置用户权限等信息
 
   4. 启动rabbitmq
+ 
+       [root@local local]# cd /usr/mq/rabbitmq/rabbitmq_server-3.6.15/sbin
 
-    [root@local local]# cd /usr/mq/rabbitmq/rabbitmq_server-3.6.15/sbin
+       [root@localhost sbin]# ./rabbitmq-server 
 
-    [root@localhost sbin]# ./rabbitmq-server 
+       启动成功后就可以用ip地址和端口号访问了
 
-    启动成功后就可以用ip地址和端口号访问了
-
-    ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/rabbitmq-plugins.png)
+       ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/rabbitmq-plugins.png)
 
