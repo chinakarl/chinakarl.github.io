@@ -29,7 +29,7 @@ keywords: linux,rabbitmq
 
    3. 编译安装( 我这里指定编译安装后放在/usr/local/erlang目录里面，这个你们可以改成其他的 )：
 
-　　　　[root@localhost otp_src_20.2]# ./configure --prefix=/usr/mq/rabbitmq/erlang   //指定编译的目录
+　　　　[root@localhost otp_src_20.2]# ./configure --prefix=/usr/mq/rabbitmq/erlang
 
 　　　　[root@localhost otp_src_20.2]# make && make install
 
@@ -39,8 +39,9 @@ keywords: linux,rabbitmq
 
 　　　　[root@localhost bin]# ./erl
 
-       ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/erlang-success.png)
+  ![INNER JOIN](https://chinakarl.github.io/images/posts/mq/erlang-success.png)
      
+
        出现以上就表示安装成功
 
    5. 配置环境变量
