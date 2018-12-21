@@ -1,5 +1,5 @@
 ---
-layout: postji
+layout: post
 title:  面试问题
 categories: 面试
 description: 记录面试中没有回答上或者深层次的问题，方便以后面试或者将经验分享给其他人
@@ -13,4 +13,4 @@ keywords: 面试
 
    1. filter(筛选器)和 interceptor(过滤器) 的区别
    
-      手动实践地址:[地址](http://dev.duoshuo.com/threads/58d1169ae293b89a20c57241)
+      手动实践地址:[地址](https://chinakarl.github.io/2018/12/20/jdbc-mybatis/)
