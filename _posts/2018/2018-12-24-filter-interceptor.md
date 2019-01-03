@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  筛选器与过滤器的区别
+title:  拦截器与过滤器的区别
 categories: spring
 description: 对筛选器和过滤器区别的一些研究和记录
-keywords: 筛选器，过滤器
+keywords: 拦截器，过滤器
 ---
 
- 筛选器过滤器的一些区别的总结
+ 拦截器过滤器的一些区别的总结
 
 
 ## 概念(区别)

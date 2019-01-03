@@ -11,7 +11,7 @@ keywords: 面试
 
 ## 面试题
 
-   1. filter(筛选器)和 interceptor(过滤器) 的区别
+   1. filter(过滤器)和 interceptor(拦截器) 的区别
    
       手动实践地址:[地址](https://chinakarl.github.io/2018/12/20/jdbc-mybatis/)
    2. 多线程
