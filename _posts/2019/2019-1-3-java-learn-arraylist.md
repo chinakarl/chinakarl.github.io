@@ -182,7 +182,7 @@ keywords: java
      3.第三种传统遍历(for循环遍历)
      
   看如下示例与运行结果   
-![INNER JOIN](https://chinakarl.github.io/images/posts/java/arraylist-demo.png)
+![INNER JOIN](https://chinakarl.github.io/images/posts/java/arraylist-demo.jpg)
    iterator：6 ms 
    randomAccess：4 ms
    for：21 ms
