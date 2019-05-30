@@ -13,7 +13,9 @@ keywords: 学习
   
 2. 写个用SpringBoot 搭建并且写个SSO程序
 
-3. 搭建后台管理系统与SSO打通  
+3. 搭建后台管理系统与SSO打通
+
+4. 深入了解Redis并且封装自己用的Redis公共库  
    
 
    

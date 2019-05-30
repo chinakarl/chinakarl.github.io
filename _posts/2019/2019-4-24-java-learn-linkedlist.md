@@ -9,7 +9,7 @@ keywords: java
  对linkedlist的基本学习使用和源码解析，并且记录下自己想到或者看见却不理解的，进行重点记录
 
 
-## arraylist基本实现方式和结构图
+## linkedlist基本实现方式和结构图
 
   1. 先看下结构图
    
