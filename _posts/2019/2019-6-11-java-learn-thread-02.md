@@ -144,6 +144,10 @@ keywords: 线程
             }
         }
         
-  上面源码中我们看到，start方法中调用了一个start0方法，该方法调用了一个新的线程去启动。
+  从上面源码中我们可以分析到
+  1.start方法中调用了一个start0方法，该方法调用了一个新的线程去启动。
+  run方法中是直接执行target的run方法，而target是Runnable对象，所以是直接执行本线程的。
   
-  run方法中是直接执行target的run方法，而target是Runnable对象，所以是直接执行本线程的。      
+  2.start方法钱加上了 synchronized，说明被同步锁了，那么我们就可以分析出，如果我们第一次调用start，但是start0启动线程后却没执行run方法呢，
+  也就是还没结束呢后面再调用一个start，这时候start已经被锁住，第二个start会无效报异常。而run方法没有。
+  这样子我们就能推断出，run可以被多次调用，而start只能调用一次。      
