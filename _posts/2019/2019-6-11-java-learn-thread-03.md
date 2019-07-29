@@ -10,9 +10,10 @@ keywords: 线程
 
 
 ## API讲解
+
   对API的讲解里面是个人的看法和代码实验
   
-  ### isAlive方法
+### isAlive方法
   
    isAlive()方法是判断当前线程是否处于活动状态的。什么是活动状态，就是线程已启动且尚未停止。线程处于正在运行或者准备运行的状态。
    示例代码：
@@ -47,7 +48,8 @@ keywords: 线程
     开始和结束都是false说明线程已经运行结束。如果把 Thread.sleep(1000);代码删除掉 end有可能是true值，
     这个是因为线程启动是异步的。
     
-   ### sleep，getId方法
+ 
+### sleep，getId方法
     
    指当前时间内(毫秒)让线程休眠或者暂停
   ```java
@@ -82,7 +84,8 @@ keywords: 线程
      run end12   1563963134995
      从中我们可以看到因为异步先打印了begin,end 然后打印了run方法中的run begin 两秒后才打印run end ，说明sleep起作用了，在打印的结果中id不同，因为一个是主线程id一个是当前线程id。
      
-   ### interrupt，interrupted,IsInterrupted方法
+
+### interrupt，interrupted,IsInterrupted方法
    
    对interrupt，interrupted,IsInterrupted等方法的基本讲解
    
@@ -165,7 +168,8 @@ keywords: 线程
      是否停止？2true
      说明IsInterrupted不会清除标记
      
-   ### suspend,resume方法
+
+### suspend,resume方法
    
    suspend是将线程暂停，resume是将线程回复运行 ,这两个方法现在已经被标记为废弃，为什么会被标记为废弃呢，我们来看下代码。
    
@@ -270,7 +274,8 @@ keywords: 线程
        看结果password不是最新的值，看第一个独占的问题就能看出为什么password值没被改变了。
        从这两个坑中我们能猜到为啥这两个方法被废弃的原因。
    
-   ### yield方法
+
+### yield方法
    
   yield方法是让cpu空闲一段时间让其他线程去执行任务，过段时间再次执行
   
@@ -303,11 +308,12 @@ keywords: 线程
     总耗时2980毫秒
     时间变长说明yield方法起作用了，他不规律的将cpu给了别的任务跑。
     
-  ### 线程优先级方法(setPriority)
+
+### 线程优先级方法(setPriority)
   
   设置线程优先级，可以帮助“线程规划器”确定在下一次执行选择哪个线程。线程的优先级分为1-10,10个等级，如果小于1或者大于10则抛出异常。
   
-  #### 线程优先级的继承性
+#### 线程优先级的继承性
   
   ```java
       public static void main(String [] agrs)
@@ -345,11 +351,13 @@ keywords: 线程
       Thread2 count priority =6
       从结果中我们能看出，当主线程的优先级被设置成6，其子线程都被改成了6，这个就说明优先级的继承性。
       
-  #### 线程优先级具有规则性
+
+#### 线程优先级具有规则性
   
      高优先级的线程大多数被优先执行完，不是说高优先级的线程就一定先执行完。设置优先级别且相差较大的情况下，不是先调用哪个线程，
      哪个线程就被优先执行。
      
-  #### 线程优先级具有随机性
+
+#### 线程优先级具有随机性
   
      上面说优先级较高的优先执行，这个说法不是完全的，因为线程还有随机性，因为优先级较高的线程不一定每次都是先执行完。
