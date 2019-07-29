@@ -9,13 +9,14 @@ keywords: 线程
  主要对线程API的学习比较，测试其功能作用和部分相似代码作用区分
 
 
-## 基本方法
-
+## API讲解
+  对API的讲解里面是个人的看法和代码实验
+  
   ### isAlive方法
   
    isAlive()方法是判断当前线程是否处于活动状态的。什么是活动状态，就是线程已启动且尚未停止。线程处于正在运行或者准备运行的状态。
    示例代码：
-   
+   ```java
     public static void main(String [] agrs)
      {
         AliveThread thread = new AliveThread();
@@ -38,17 +39,18 @@ keywords: 线程
             System.out.println("run="+this.isAlive());
         }
     }
+```
     结果为 ：
-     begin=false
-     run=true
-     end=false
+    begin=false
+    run=true
+    end=false
     开始和结束都是false说明线程已经运行结束。如果把 Thread.sleep(1000);代码删除掉 end有可能是true值，
     这个是因为线程启动是异步的。
     
    ### sleep，getId方法
     
    指当前时间内(毫秒)让线程休眠或者暂停
-   
+  ```java
       public static void main(String [] agrs)
          {
              SleepThread thread = new SleepThread();
@@ -72,6 +74,7 @@ keywords: 线程
              }
          }
      }
+  ```
      运行结果：
      begin 1   1563963132994
      end 1   1563963132995
@@ -84,8 +87,8 @@ keywords: 线程
    对interrupt，interrupted,IsInterrupted等方法的基本讲解
    
    #### interrupt方法
-   
-     调用interrupt只是在当前线程打个标记，并不是真正的停止线程。
+   调用interrupt只是在当前线程打个标记，并不是真正的停止线程。
+   ```java
        public static void main(String [] agrs)
         {
                Thread thread = new InterruptThread();
@@ -109,6 +112,7 @@ keywords: 线程
                }
            }
        }
+   ```
       运行结果：输出了所有的所有的结果，但是如果将interrupt改成stop会运行到一半剩余的没有打印出来，
       这说明stop是真正kill掉了线程，就好像for循环中的break。
        
@@ -117,6 +121,7 @@ keywords: 线程
      interrupted 测试当前线程是否已经中断，清除状态标志
      IsInterrupted 测试线程是否已经中断，不清除状态标志
      
+   ```java  
      public static void main(String [] agrs)
          {
              InterruptThread thread = new InterruptThread();
@@ -143,6 +148,7 @@ keywords: 线程
              }
          }
      }
+   ```
      结果是：
      是否停止？1 false
      是否停止？2 false
@@ -164,7 +170,7 @@ keywords: 线程
    suspend是将线程暂停，resume是将线程回复运行 ,这两个方法现在已经被标记为废弃，为什么会被标记为废弃呢，我们来看下代码。
    
    #### suspend和resume缺点--独占
-   
+   ```java
       public static void main(String [] agrs){
              try {
                  final SynchronizedObject synchronizedObject = new SynchronizedObject();
@@ -203,6 +209,7 @@ keywords: 线程
              }
          }
      }
+   ```  
      执行结果：
      只有执行到test才进来
      我感觉我进不来了，被锁在外面了
@@ -210,7 +217,7 @@ keywords: 线程
      因为println内部用的是同步锁，当调用suspend后，锁没被释放，println一直打印不出来。
      
    #### suspend和resume缺点--不同步
-   
+  ```java 
     public static  void main(String[] args)
        {
            try {
@@ -256,7 +263,7 @@ keywords: 线程
                System.out.println("name="+name+"\npassword="+password);
            }
        }
-       
+   ```    
        停止线程a
        name=zhaihaixiang
        password=11
@@ -267,6 +274,7 @@ keywords: 线程
    
   yield方法是让cpu空闲一段时间让其他线程去执行任务，过段时间再次执行
   
+  ```java
     public static  void main(String[] args)
        {
            YieldThread yieldThread = new YieldThread();
@@ -288,6 +296,7 @@ keywords: 线程
            System.out.println("总耗时"+(endTime-beginTime)+"毫秒");
        }
     }
+  ```  
     运行结果:
     总耗时17毫秒
     将Thread.yield();方法放开再次执行 
@@ -300,6 +309,7 @@ keywords: 线程
   
   #### 线程优先级的继承性
   
+  ```java
       public static void main(String [] agrs)
        {
               System.out.println("main priority="+Thread.currentThread().getPriority());
@@ -322,6 +332,7 @@ keywords: 线程
               System.out.println("Thread2 count priority =" +this.getPriority());
           }
       }
+  ```    
       看如上代码，运行结果：
       main priority=5
       main priority=5
