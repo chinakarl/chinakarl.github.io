@@ -89,7 +89,7 @@ keywords: 线程
    
    对interrupt，interrupted,IsInterrupted等方法的基本讲解
    
-   #### interrupt方法
+#### interrupt方法
    调用interrupt只是在当前线程打个标记，并不是真正的停止线程。
    ```java
        public static void main(String [] agrs)
@@ -119,7 +119,9 @@ keywords: 线程
       运行结果：输出了所有的所有的结果，但是如果将interrupt改成stop会运行到一半剩余的没有打印出来，
       这说明stop是真正kill掉了线程，就好像for循环中的break。
        
-   #### interrupted,IsInterrupted方法
+       
+
+#### interrupted,IsInterrupted方法
    
      interrupted 测试当前线程是否已经中断，清除状态标志
      IsInterrupted 测试线程是否已经中断，不清除状态标志
@@ -173,7 +175,7 @@ keywords: 线程
    
    suspend是将线程暂停，resume是将线程回复运行 ,这两个方法现在已经被标记为废弃，为什么会被标记为废弃呢，我们来看下代码。
    
-   #### suspend和resume缺点--独占
+#### suspend和resume缺点--独占
    ```java
       public static void main(String [] agrs){
              try {
@@ -220,7 +222,8 @@ keywords: 线程
      看执行结果知道，当调用suspend后锁一直被占用不能释放，所以线程2进不来了。还有一种写法是和println结合的，
      因为println内部用的是同步锁，当调用suspend后，锁没被释放，println一直打印不出来。
      
-   #### suspend和resume缺点--不同步
+
+#### suspend和resume缺点--不同步
   ```java 
     public static  void main(String[] args)
        {
