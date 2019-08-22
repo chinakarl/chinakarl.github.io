@@ -18,17 +18,17 @@ keywords: redis
 
    连接Redis，设置值后执行SAVE命令
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/rdb/save-command.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/rdb/save-command.jpg)
    
    然后可以查看下redis.conf的持久化工作目录。进入目录可以看到保存了一个dump.rdb文件。该文件是一个二进制文件，无法直接正常打开。
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/rdb/rdb-file.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/rdb/rdb-file.jpg)
    
    以上是手动执行的过程。但在生产我们很少会手动登上服务去执行操作，所以更多的时候是依赖Redis的配置，定时保存RDB文件
    
    打开redis.conf配置文件，找到SNAPSHOTTING的配置，Save Point的设置。
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/rdb/save-point.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/rdb/save-point.jpg)
    
    图中的配置意思是，当至少有一个key变更时，900秒后会执行一次SAVE。其他配置同理，有10次变更，300秒后保存一次.....
    
@@ -69,7 +69,7 @@ keywords: redis
    
 ### AOF-启动   
 
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/aof/aof-on.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/aof/aof-on.jpg)
    
    AOF默认是关闭的。打开redis.conf配置文件，找到appendonly no改成appendonly yes
    
@@ -80,11 +80,11 @@ keywords: redis
    
 ### AOF-fsync 同步规则   
 
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/aof/aof-on.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/aof/aof-on.jpg)
    
    fsync()是一个系统调用函数，告诉操作系统把数据写到硬盘上，而不是缓存更多数据才写到硬盘。这样的调用可以及时保存数据到硬盘上。
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/aof/aof-fsync.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/aof/aof-fsync.jpg)
    
    Redis提供了三种fsync的调用方式
    
@@ -95,7 +95,7 @@ keywords: redis
    
 ### AOF-文件格式解析
 
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/aof/aof-rule.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/aof/aof-rule.jpg)
 
    文件解析说明：
   
@@ -112,7 +112,7 @@ keywords: redis
 
    看回redis.conf配置，有两项控制rewrite的选项。
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/data-persistence/aof/aof-rewrite.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/redis/data-persistence/aof/aof-rewrite.jpg)
    
    auto-aof-rewrite-percentage 100，当文件增长100%（一倍）时候，自动重写。
    auto-aof-rewrite-min-size 64mb，日志重写最小文件大小，如果小于该大小，不会自动重写。
