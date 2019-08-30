@@ -8,14 +8,14 @@ keywords: fastdfs
 
   本章记录linux下对fastdfs的部署以及遇到的问题
 
-## FASTDFS 介绍
+# FASTDFS 介绍
    FastDFS是一个开源的轻量级分布式文件系统，它对文件进行管理，功能包括：文件存储、文件同步、文件访问（文件上传、文件下载）等，解决了大容量存储和负载均衡的问题。特别适合以文件为载体的在线服务，如相册网站、视频网站等等。
    FastDFS为互联网量身定制，充分考虑了冗余备份、负载均衡、线性扩容等机制，并注重高可用、高性能等指标，使用FastDFS很容易搭建一套高性能的文件服务器集群提供文件上传、下载等服务
    更多详细的可以百度下
    
-## 部署
+# 部署
 
-   ### 准备
+## 准备
    
    搭建所需要的工具如下图
    
@@ -33,9 +33,9 @@ keywords: fastdfs
    
    完成上面所有的工具下载后，我们准备进行下一步。
    
-   ### 安装
+## 安装
    
-   1. libfastcommon 安装
+### libfastcommon 安装
    
    将 libfastcommon-master.zip  上传到服务器，执行解压命令
      
@@ -43,14 +43,14 @@ keywords: fastdfs
    
    解压后进入目录，找到图中shell脚本文件，我们需要执行的就是此文件
    
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/fastdfs/libfastcommon.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/fastdfs/libfastcommon.png)
   
   然后执行下面命令，安装libfastcommon
    
   > ./make.sh
     ./make.sh install
     
-  2. FastDfs安装
+### FastDfs安装
   
    将 fastdfs-5.11.zip  上传到服务器，执行解压命令
          
@@ -77,7 +77,7 @@ keywords: fastdfs
     cp storage.conf.sample storage.conf
     cp tracker.conf.sample tracker.conf
     
-  3. tracker 配置安装
+### tracker 配置安装
   
   在/usr/fastdfs/ 下新建tracker目录
   
@@ -134,7 +134,7 @@ keywords: fastdfs
   
   ![INNER JOIN](https://chinakarl.github.io/images/posts/fastdfs/tracker-listen.jpg)
   
-   3. storage 配置安装
+### storage 配置安装
    
    在/usr/fastdfs/ 下新建两个目录
    
@@ -179,7 +179,7 @@ keywords: fastdfs
      
    执行命令查看storage是否启动成功,出现如下图中，说明storage启动成功
      
-   ![INNER JOIN](https://chinakarl.github.io/images/posts/fastdfs/storage-listen.jpg)
+   ![INNER JOIN](https://chinakarl.github.io/images/posts/fastdfs/storage-listen.png)
    
    执行
    
@@ -187,7 +187,7 @@ keywords: fastdfs
    
    如果出现ip_addr = Active, 则表明storage服务器已经登记到tracker服务器
    
-   4.配置client
+### 配置client
    
    >vim /etc/fdfs/client.conf
    
@@ -223,7 +223,7 @@ keywords: fastdfs
    
    正是这样，FastDFS需要结合nginx，所以取消原来对HTTP的直接支持。
    
-   5. FastDFS的nginx模块安装
+### FastDFS的nginx模块安装
    
    在安装nginx之前要安装nginx所需的依赖lib
    
