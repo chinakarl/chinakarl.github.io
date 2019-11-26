@@ -19,3 +19,22 @@ keywords: 面试
    3. springmvc 原理
    
       手动实践地址:[地址](https://chinakarl.github.io/2018/12/18/springmvc-source-analysis/)
+      
+   4. redis
+   
+   redis常见问题 :[地址](https://chinakarl.github.io/2019/05/18/redis-problems/)
+   
+   redis持久化 :[地址](https://chinakarl.github.io/2019/05/17/redis-data-persistence/)
+      
+   5. arraylist
+      
+   源码解析和线程不安全原因  :[地址](https://chinakarl.github.io/2019/01/03/java-learn-arraylist/)
+   
+   6.jdbc和mybatis比较
+   
+   jdbc和mybatis比较  :[地址](https://chinakarl.github.io/2018/12/20/jdbc-mybatis/)
+   
+   7. B/B+树
+   
+   [地址](https://segmentfault.com/a/1190000020545192?utm_source=tag-newest)
+   
