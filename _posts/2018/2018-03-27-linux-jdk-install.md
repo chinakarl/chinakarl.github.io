@@ -40,6 +40,18 @@ linux中jdk安装部署
 	export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib:$CLASSPATH
 	export JAVA_PATH=${JAVA_HOME}/bin:${JRE_HOME}/bin
 	export PATH=$PATH:${JAVA_PATH}
+	
+	
+## 切换jdk版本
+
+  如果linux服务器上有多个jdk版本，执行以下命令
+  
+  alternatives --config java
+  
+  查找到多个jdk版本，选择自己需要切换的版本，如没有安装自己的版本，可以先安装自己想要的jdk然后执行
+  
+  alternatives --install /usr/bin/java java /usr/local/jdk1.8.0_181/bin/java（jdk安装位置） 4 （位置）
+  
 
 
   
