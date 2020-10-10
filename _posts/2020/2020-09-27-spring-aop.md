@@ -1,28 +1,23 @@
 ---
 layout: post
-title:  spring 事务
+title:  spring aop
 categories: spring
-description: spring 事务详解
-keywords: spring，事务
+description: spring aop详解
+keywords: spring，aop
 ---
 
-   事务，是为了管理数据为了一致性而设计的。
+   AOP（Aspect Oriented Programming）意为：面向切面编程，通过预编译方式和运行期动态代理实现程序功能的统一维护的一种技术。
+ AOP是OOP（面向对象编程）的延续，是软件开发中的一个热点，也是Spring框架中的一个重要内容（Spring核心之一），是函数式编程的一种衍生范型。
+ 利用AOP可以对业务逻辑的各个部分进行隔离，从而使得业务逻辑各部分之间的耦合度降低，提高程序的可重用性，同时提高了开发的效率。
 
 
-# Spring事务的基本原理
+# 作用
 
-   Spring事务的本质其实就是数据库对事务的支持，没有数据库的事务支持，spring是无法提供事务功能的   
+   为了更清晰的逻辑，可以让你的业务逻辑去关注自己本身的业务，而不去想一些其他的事情，这些其他的事情包括：安全，事务，日志等
 
-## JDBC 事务操作  
+# 概念  
 
-1.  获取连接 Connection con = DriverManager.getConnection()
-2.  开启事务con.setAutoCommit(true/false);
-3.  执行CRUD
-4.  提交事务/回滚事务 con.commit() / con.rollback();
-5.  关闭连接 conn.close();
-  
-   使用Spring的事务管理功能后，我们可以不再写步骤 2 和 4 的代码，而是由Spirng 自动完成。
-那么Spring是如何在我们书写的 CRUD 之前和之后开启事务和关闭事务的呢？解决这个问题，也就可以从整体上理解Spring的事务管理实现原理了.
+## 通知
 
   
 ##  spring 事务
