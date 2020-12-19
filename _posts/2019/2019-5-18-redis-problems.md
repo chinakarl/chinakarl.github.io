@@ -102,6 +102,16 @@ keywords: redis
 ## Redis哨兵、复制、集群的设计原理，以及区别
 
   [地址](https://www.cnblogs.com/telwanggs/p/10856157.html)
+  
+### 业务逻辑时间超出分布式锁过期时间
+
+Redisson，watch dog
+
+[地址](https://blog.csdn.net/wutengfei_java/article/details/100699538)
+
+## Redis 如何实现延迟队列
+
+[地址](https://blog.csdn.net/why15732625998/article/details/104890079/)
    
 ## Redis数据淘汰策略
 
