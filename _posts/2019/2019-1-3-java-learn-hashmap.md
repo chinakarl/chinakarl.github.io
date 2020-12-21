@@ -74,6 +74,11 @@ keywords: java
 开始有值为翟海翔，这时候就用小明的key equals 翟海翔 的 key，发现 返回false，数组下添加链表元素为 小明的。
 小红进来 equals 翟海翔和小明的key发现都返回 false ，则在链表末尾添加新元素。如果为true，则覆盖当前元素。 
 
+如下图：
+
+![INNER JOIN](https://chinakarl.github.io/images/posts/java/hashmap/hashmap-put3.png)
+
+
 链表用的好好的，为什么1.8之后转换成了红黑树呢？
 在上面也说了，链表查询比较慢，这就会出现链表数据大的时候查询效率降低，所以就添加了红黑树。当链表格式超过8的时候，会转变成红黑树。
 
